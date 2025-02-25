@@ -2,28 +2,64 @@
 
 body {
     font-family: cursive;
-}
+}   
 
-.logo-company {
-    height: 70px;
-    width: 70px;
+
+.logo {
+    height: 60px;
+    width: 60px;
     background-image: url(https://picsum.photos/500);
     background-size: cover;
     border-radius: 50%;
 }
 
-.main-header {
+.header-wrapper { 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid black;
+    padding: 16px 24px;
 }
 
-nav>a {
-    border: 1px solid;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    color: black;
+.header-wrapper > .menu {
+    display: flex;
+}
+
+.header-wrapper > .menu > button {
+    background-color: white;
+    padding: 8px 16px;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+}
+
+.header-wrapper > .menu > button:hover {
+ background-color: gainsboro;
+}
+
+
+.header-wrapper > .menu > button:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.header-wrapper > .menu > button:last-child {
+    border-radius: 4px 0 0 4px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header-wrapper {
+        flex-direction: column;
+
+    }
+    .menu {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom:4px;
+    }
 }
 
 main>header {
