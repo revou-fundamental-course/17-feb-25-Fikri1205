@@ -1,1 +1,77 @@
 /* Ini CSS External */
+
+body {
+    font-family: cursive;
+}
+
+.logo-company {
+    height: 70px;
+    width: 70px;
+    background-image: url(https://picsum.photos/500);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>a {
+    border: 1px solid;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+main>header {
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    gap: 24px;
+}
+
+.main-container {
+    border: 1px solid;
+    height: 400px;
+    flex: 1;
+    align-content: center;
+    text-align: center;
+}
+
+#our-package-section>header {
+    height: 100px;
+    align-content: center;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.our-package-content {
+    border: 1px solid;
+    height: 300px;
+    align-content: center;
+    text-align: center;
+}
+
+#call-us-section>header {
+    height: 100px;
+    align-content: center;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.call-us-content {
+    border: 1px solid;
+    height: 300px;
+    align-content: center;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
