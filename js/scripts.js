@@ -39,5 +39,18 @@ function showBanner() {
     banner[indexBanner].style.display = 'block';
 }
 
+function showSelectedOption() {
+    // Mengambil nilai yang dipilih
+    let selectedValue = document.getElementById("destination").value;
+    
+    // Menampilkan hasil pilihan
+    document.getElementById("selected-option").innerText = "Anda memilih: " + selectedValue;
+}
+
+function callUs() {
+    // Mengarahkan pengguna untuk menelepon nomor agen travel
+    window.location.href = "tel:+6281234567890";
+}
+
 // Auto Play
 setInterval(nextBanner, 3000);

@@ -18,7 +18,7 @@
          <div class="logo-company"></div>
 
          <!-- Name Tag Brand -->
-         <h2>Mysya.rc</h2>
+         <h2>Firz Travel</h2>
 
          <nav>
             <a href="#" class="no-border-radius-right">Home</a>
@@ -32,17 +32,19 @@
      <!-- Main Content  -->
       <main>
         <header>
-           <h1>Premium Cookies</h1>
+           <h1>Welcome to Firz Travel</h1>
             <h4>Your Happiness is Our Happiness</h4>
         </header>
 
         <section class="main-content">
+            
             <!-- Banner Autoslide -->
             <aside class="main-container">
                 <div class="main-banner banner-img-1"></div>
                 <div class="main-banner banner-img-2"></div>
                 <div class="main-banner banner-img-3"></div>
             </aside>
+
 
             <!-- Form Contact Us -->
             <aside class="main-container">
@@ -55,6 +57,23 @@
                     <div>
                         <label for="name-input">Name:</label>
                         <input type="text" id="name-input" required>
+                    </div>
+
+                    <div>
+                        <label for="email-input">Email:</label>
+                        <input type="text" id="email-input" required>
+                    </div>
+
+                    <div>
+                        <label for="destination-input">Destination:</label>
+                        <select id="destination" onchange="showSelectedOption()">
+                            <option value="" disabled selected>Pilih Destinasi</option>
+                            <option value="Bali">Bali</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Europe">Europe</option>
+                            <option value="Dubai">Dubai</option>
+                            <option value="Australia">Australia</option>
+                        </select>
                     </div>
 
                     <div>
@@ -72,7 +91,73 @@
 
             <!-- Content Our Packages -->
             <article class="our-package-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing ....</p>
+                               <!-- Our Package Section -->
+    <section id="our-package">
+        <div class="package-container">
+            
+            <!-- Package 1 -->
+            <div class="package-card">
+                <img src="https://source.unsplash.com/300x200/?bali,beach" alt="Bali Tour">
+                <div class="package-info">
+                    <h3>Bali Paradise</h3>
+                    <p>5D4N trip to explore Bali's beaches and culture.</p>
+                    <p class="price">$799 per person</p>
+                </div>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="package-card">
+                <img src="https://source.unsplash.com/300x200/?tokyo,city" alt="Japan Tour">
+                <div class="package-info">
+                    <h3>Japan Explorer</h3>
+                    <p>Experience the beauty of Tokyo and Kyoto.</p>
+                    <p class="price">$1,299 per person</p>
+                </div>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="package-card">
+                <img src="https://source.unsplash.com/300x200/?paris,eiffel" alt="Europe Tour">
+                <div class="package-info">
+                    <h3>European Dream</h3>
+                    <p>Visit Paris, Rome, and London in 10 days.</p>
+                    <p class="price">$2,499 per person</p>
+                </div>
+            </div>
+
+            <!-- Package 4 -->
+            <div class="package-card">
+                <img src="https://source.unsplash.com/300x200/?dubai,skyline" alt="Dubai Tour">
+                <div class="package-info">
+                    <h3>Dubai Luxury</h3>
+                    <p>Enjoy the high-end lifestyle of Dubai.</p>
+                    <p class="price">$999 per person</p>
+                </div>
+            </div>
+
+            <!-- Package 5 -->
+            <div class="package-card">
+                <img src="https://source.unsplash.com/300x200/?sydney,opera" alt="Australia Tour">
+                <div class="package-info">
+                    <h3>Australia Adventure</h3>
+                    <p>Explore Sydney, Melbourne, and Gold Coast.</p>
+                    <p class="price">$1,599 per person</p>
+                </div>
+            </div>
+
+            <!-- Package 6 -->
+            <div class="package-card">
+                <img src="https://source.unsplash.com/300x200/?egypt,pyramids" alt="Egypt Tour">
+                <div class="package-info">
+                    <h3>Egyptian Wonders</h3>
+                    <p>Discover the ancient pyramids and Nile River.</p>
+                    <p class="price">$899 per person</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
             </article>
         </section>
 
@@ -84,7 +169,13 @@
 
             <!-- Content Call Us Packages -->
             <article class="call-us-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing ....</p>
+                <section id="call-us">
+                    <h2>Need Help Planning Your Trip?</h2>
+                    <p>Contact our travel experts for the best deals and guidance!</p>
+                    
+                    <!-- CTA Button -->
+                    <a href="javascript:void(0);" class="cta-button" onclick="callUs()">Call Us Now</a>
+                </section>
             </article>
         </section>
 
